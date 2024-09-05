@@ -7,16 +7,6 @@ while num <= 1000:
 
 
 ################2
-inches = 0
-while inches >= 0:
-    inches = int(input("Enter the number of inches to be converted to cm: "))
-    centimeters = inches * 2.54
-    if inches < 0:
-        print("exit")
-    else:
-        print(f"{inches} inches is equal to {centimeters} cm")
-
-##################3
 inches = int(input("Enter the number of inches to be converted to cm: "))
 while inches >= 0:
     centimeters = inches * 2.54
@@ -25,7 +15,19 @@ while inches >= 0:
         print("exit")
         break
     inches = int(input("Enter the number of inches to be converted to cm: "))
+##################3
+max_number = None
+min_number = None
+number = input("Enter the numbers: ")
+while number != "":
+    number = float(number)
+    if max_number is None or max_number < number:
+        max_number = number
+    if min_number is None or min_number > number:
+        min_number = number
+    number = input("Enter the numbers: ")
 
+print (f"the max number is {max_number} and the min number is {min_number}")
 
 ################4
 import random
