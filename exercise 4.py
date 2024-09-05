@@ -17,27 +17,14 @@ while inches >= 0:
         print(f"{inches} inches is equal to {centimeters} cm")
 
 ##################3
-numbers = []
-
-while True:
-    user_input = input("Enter a number (or press Enter to quit): ")
-
-    if user_input == "":
+inches = int(input("Enter the number of inches to be converted to cm: "))
+while inches >= 0:
+    centimeters = inches * 2.54
+    print(f"{inches} inches is equal to {centimeters} cm")
+    if inches < 0:
+        print("exit")
         break
-
-    numbers.append(int(user_input))
-
-if numbers:
-    smallest = largest = numbers[0]
-
-    for num in numbers:
-        if num < smallest:
-            smallest = num
-        if num > largest:
-            largest = num
-
-    print("Smallest number:", smallest)
-    print("Largest number:", largest)
+    inches = int(input("Enter the number of inches to be converted to cm: "))
 
 
 ################4
