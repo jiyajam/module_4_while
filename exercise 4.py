@@ -1,6 +1,4 @@
 #############1
-from pkg_resources import non_empty_lines
-
 num = 1
 while num <= 1000:
     if num % 3 == 0:
