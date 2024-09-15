@@ -57,8 +57,8 @@ while attempts < 5:
         break
     else:
         attempts = attempts + 1
-    if attempts == 5:
-        print("Access denied! The correct username is python and password is rules")
+if attempts == 5:
+    print("Access denied! The correct username is python and password is rules")
 
 ###########6
 import random
