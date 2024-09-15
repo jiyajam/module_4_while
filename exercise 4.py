@@ -23,7 +23,7 @@ while number != "":
     number = float(number)
     if max_number is None or max_number < number:
         max_number = number
-    if min_number is None or min_number > number:
+    elif min_number is None or min_number > number:
         min_number = number
     number = input("Enter the numbers: ")
 
